@@ -49,20 +49,29 @@ AAEAAAD/////AQAAAAAAAAAMAgAAAA9Bc3NlbWJseS1DU2hhcnAFAQAAAAdMYWJEYXRhBAAAAAtjdXJy
 */
 
 	private void GenerateMaze(){
-		Room('H');
-		Room('1');
-		Room('2');
-		Room('5');
-		Room('8');
-		Room('7');
-		Room('6');
-		Room('3');
-		Room('0');
-		Room('B');
-		
+		//start room (bridge)
+		Room('H'); //[0]
 
-		ConnectRooms(0,1);
+		//circle hallway
+		Room('1'); //[1] 
+		Room('2'); //[2] 
+		Room('5'); //[3]
+		Room('8'); //[4]
+		Room('7'); //[5]
+		Room('6'); //[6]
+		Room('3'); //[7]
+		Room('0'); //[8]
+
+		//small room 1 (sensor)
+		Room('B'); //[9]
+
+		//small room 2 (engine)
+		Room('C'); //[10]
 		
+		//bridge to circle hallway
+		ConnectRooms(0,1);
+
+		//circle hallway
 		ConnectRooms(1,2);
 		ConnectRooms(2,3);
 		ConnectRooms(3,4);
@@ -72,7 +81,11 @@ AAEAAAD/////AQAAAAAAAAAMAgAAAA9Bc3NlbWJseS1DU2hhcnAFAQAAAAdMYWJEYXRhBAAAAAtjdXJy
 		ConnectRooms(7,8);
 		ConnectRooms(8,1);
 
+		//small room 1 (sensor) to circle hallway
 		ConnectRooms(7,9);
+
+		//small room 2 (engine) to circle hallway
+		ConnectRooms(3,10);
 		
 		
 		Lab.currentCell = Lab.Cells[0];
