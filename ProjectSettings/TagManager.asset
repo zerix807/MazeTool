@@ -6,6 +6,17 @@ TagManager:
   tags:
   - ExcludeTeleport
   - MazeQuadrants
+  - Cubes
+  - Spheres
+  - Leg
+  - Arm
+  - Saucers
+  - Torso
+  - OtherSaucers
+  - Comp1
+  - Comp2
+  - Handle
+  - Lever
   layers:
   - Default
   - TransparentFX
