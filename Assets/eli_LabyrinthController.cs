@@ -63,7 +63,7 @@ AAEAAAD/////AQAAAAAAAAAMAgAAAA9Bc3NlbWJseS1DU2hhcnAFAQAAAAdMYWJEYXRhBAAAAAtjdXJy
 		Room('0'); //[8]
 
 		//small room 1 (sensor)
-		Room('B'); //[9]
+		Room('D'); //[9]
 
 		//small room 2 (engine)
 		Room('C'); //[10]
@@ -75,17 +75,17 @@ AAEAAAD/////AQAAAAAAAAAMAgAAAA9Bc3NlbWJseS1DU2hhcnAFAQAAAAdMYWJEYXRhBAAAAAtjdXJy
 		ConnectRooms(1,2);
 		ConnectRooms(2,3);
 		ConnectRooms(3,4);
-		ConnectRooms(4,5);
-		ConnectRooms(5,6);
+		//ConnectRooms(4,5);
+		//ConnectRooms(5,6);
 		ConnectRooms(6,7);
 		ConnectRooms(7,8);
 		ConnectRooms(8,1);
 
 		//small room 1 (sensor) to circle hallway
-		ConnectRooms(7,9);
+		ConnectRooms(6,9);
 
 		//small room 2 (engine) to circle hallway
-		ConnectRooms(3,10);
+		ConnectRooms(4,10);
 		
 		
 		Lab.currentCell = Lab.Cells[0];
